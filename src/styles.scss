@@ -1,1 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+//custom variables
+$primary:#545454;
+$secondary:#FF8B37;
+$dark:#3D3D3D;
+$light:#545454;
+
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+$custom-theme-colors:(
+
+    "lightdark":#3D3D3D
+
+);
+
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+html{
+    font-family: 'Helvetica Neue', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    --mid-gray:#545454;
+    --light-gray:#9B9B9B;
+    --dark-gray:#323232;
+}
+

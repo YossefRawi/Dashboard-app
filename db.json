@@ -1,0 +1,279 @@
+{
+  "Users": [
+    {
+      "fullName": "Smith Alice",
+      "email": "smith@example.com",
+      "city": "Los Angeles",
+      "state": "CA",
+      "joined": "September 12, 2019",
+      "permissions": "Viewer",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg",
+      "id": 2
+    },
+    {
+      "id": 4,
+      "fullName": "William Eva",
+      "email": "eav@gmail.com",
+      "city": "cairo",
+      "state": "cairo",
+      "joined": "November 5, 2011",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 6.svg",
+      "checked": false
+    },
+    {
+      "id": 5,
+      "fullName": "David Brown",
+      "email": "david@example.com",
+      "city": "Seattle",
+      "state": "WA",
+      "joined": "August 12, 2014",
+      "permissions": "Viewer",
+      "photo": "assets/images/Ellipse 7.svg",
+      "checked": false
+    },
+    {
+      "id": 6,
+      "fullName": "Sophia Miller",
+      "email": "sophia@example.com",
+      "city": "Denver",
+      "state": "CO",
+      "joined": "January 5",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 8.svg",
+      "checked": false
+    },
+    {
+      "id": 7,
+      "fullName": "Jack Wilson",
+      "email": "jack@example.com",
+      "city": "Atlanta",
+      "state": "GA",
+      "joined": "September 18, 2015",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 9.svg",
+      "checked": false
+    },
+    {
+      "id": 8,
+      "fullName": "Emma Davis",
+      "email": "emma@example.com",
+      "city": "Dallas",
+      "state": "TX",
+      "joined": "March 7, 2016",
+      "permissions": "Viewer",
+      "photo": "assets/images/Ellipse 10.svg",
+      "checked": false
+    },
+    {
+      "id": 9,
+      "fullName": "Daniel Lee",
+      "email": "daniel@example.com",
+      "city": "Phoenix",
+      "state": "AZ",
+      "joined": "July 14, 2015",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 3.svg",
+      "checked": false
+    },
+    {
+      "id": 10,
+      "fullName": "Olivia Hernandez",
+      "email": "olivia@example.com",
+      "city": "Houston",
+      "state": "TX",
+      "joined": "October 19, 2014",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 7.svg",
+      "checked": false
+    },
+    {
+      "id": 11,
+      "fullName": "Liam Anderson",
+      "email": "liam@example.com",
+      "city": "Orlando",
+      "state": "FL",
+      "joined": "May 26, 2013",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 6.svg",
+      "checked": false
+    },
+    {
+      "id": 12,
+      "fullName": "Ava Martinez",
+      "email": "ava@example.com",
+      "city": "Las Vegas",
+      "state": "NV",
+      "joined": "February 9, 2012",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 5.svg",
+      "checked": false
+    },
+    {
+      "id": 13,
+      "fullName": "Noah Taylor",
+      "email": "noah@example.com",
+      "city": "Charlotte",
+      "state": "NC",
+      "joined": "June 23, 2011",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 4.svg",
+      "checked": false
+    },
+    {
+      "id": 14,
+      "fullName": "Mia Adams",
+      "email": "mia@example.com",
+      "city": "San Diego",
+      "state": "CA",
+      "joined": "December 3, 2010",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 3.svg",
+      "checked": false
+    },
+    {
+      "fullName": "Youssef Mamdouh Ahmed Rawi",
+      "email": "yossefrwy@gmail.com",
+      "city": "Cairo",
+      "state": "State",
+      "joined": "November 11, 2011",
+      "permissions": "Contributor",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg",
+      "id": 15
+    },
+    {
+      "id": 19,
+      "fullName": "William Eva",
+      "email": "eav@gmail.com",
+      "city": "cairo",
+      "state": "cairo",
+      "joined": "November 5, 2011",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 6.svg",
+      "checked": false
+    },
+    {
+      "id": 20,
+      "fullName": "David Brown",
+      "email": "david@example.com",
+      "city": "Seattle",
+      "state": "WA",
+      "joined": "August 12, 2014",
+      "permissions": "Viewer",
+      "photo": "assets/images/Ellipse 7.svg",
+      "checked": false
+    },
+    {
+      "id": 21,
+      "fullName": "Sophia Miller",
+      "email": "sophia@example.com",
+      "city": "Denver",
+      "state": "CO",
+      "joined": "January 5",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 8.svg",
+      "checked": false
+    },
+    {
+      "id": 22,
+      "fullName": "Jack Wilson",
+      "email": "jack@example.com",
+      "city": "Atlanta",
+      "state": "GA",
+      "joined": "September 18, 2015",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 9.svg",
+      "checked": false
+    },
+    {
+      "id":23 ,
+      "fullName": "Emma Davis",
+      "email": "emma@example.com",
+      "city": "Dallas",
+      "state": "TX",
+      "joined": "March 7, 2016",
+      "permissions": "Viewer",
+      "photo": "assets/images/Ellipse 10.svg",
+      "checked": false
+    },
+    {
+      "id": 24,
+      "fullName": "Daniel Lee",
+      "email": "daniel@example.com",
+      "city": "Phoenix",
+      "state": "AZ",
+      "joined": "July 14, 2015",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 3.svg",
+      "checked": false
+    },
+    {
+      "id": 25,
+      "fullName": "Olivia Hernandez",
+      "email": "olivia@example.com",
+      "city": "Houston",
+      "state": "TX",
+      "joined": "October 19, 2014",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 7.svg",
+      "checked": false
+    },
+    {
+      "id": 26,
+      "fullName": "Liam Anderson",
+      "email": "liam@example.com",
+      "city": "Orlando",
+      "state": "FL",
+      "joined": "May 26, 2013",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 6.svg",
+      "checked": false
+    },
+    {
+      "id": 27,
+      "fullName": "Ava Martinez",
+      "email": "ava@example.com",
+      "city": "Las Vegas",
+      "state": "NV",
+      "joined": "February 9, 2012",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 5.svg",
+      "checked": false
+    },
+    {
+      "id": 28,
+      "fullName": "Noah Taylor",
+      "email": "noah@example.com",
+      "city": "Charlotte",
+      "state": "NC",
+      "joined": "June 23, 2011",
+      "permissions": "Admin",
+      "photo": "assets/images/Ellipse 4.svg",
+      "checked": false
+    },
+    {
+      "id": 29,
+      "fullName": "Mia Adams",
+      "email": "mia@example.com",
+      "city": "San Diego",
+      "state": "CA",
+      "joined": "December 3, 2010",
+      "permissions": "Contributor",
+      "photo": "assets/images/Ellipse 3.svg",
+      "checked": false
+    },
+    {
+      "fullName": "Youssef Mamdouh Ahmed Rawi",
+      "email": "yossefrwy@gmail.com",
+      "city": "Cairo",
+      "state": "State",
+      "joined": "November 11, 2011",
+      "permissions": "Contributor",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg",
+      "id": 30
+    }
+  ]
+}

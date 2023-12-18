@@ -1,0 +1,86 @@
+<form action="" [formGroup]="userForm">
+  <mat-form-field class="field-form"  [color]="'primary'">
+    <mat-label>{{"full-name" | translate}}</mat-label>
+    <input formControlName="fullName" placeholder="Full Name"  [errorStateMatcher]="matcher"   matInput>
+    @if (emailFormControl.hasError('fullName') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid Full Name</mat-error>
+    }
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>Full Name is <strong>required</strong></mat-error>
+    }
+</mat-form-field>
+
+<mat-form-field class="field-form"  [color]="'primary'">
+    <mat-label>{{"email" | translate}}</mat-label>
+    <input matInput formControlName="email" placeholder="Ex. pat@example.com" type="email"  [errorStateMatcher]="matcher" >
+    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+    @if (emailFormControl.hasError('email') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid email address</mat-error>
+    }
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>Email is <strong>required</strong></mat-error>
+    }
+</mat-form-field>
+
+<div class="state-city d-flex">
+  <mat-form-field class="field-form"  [color]="'primary'">
+      <mat-label>{{"city" | translate}}</mat-label>
+      <input formControlName="city" placeholder="City"  [errorStateMatcher]="matcher"   matInput>
+       @if (emailFormControl.hasError('city') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid City</mat-error>
+    }
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>City Name is <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field class="field-form"  [color]="'primary'">
+    <mat-label>{{"state" | translate}}</mat-label>
+    <input formControlName="state" placeholder="State"  [errorStateMatcher]="matcher"   matInput>
+     @if (emailFormControl.hasError('state') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid State</mat-error>
+    }
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>State is <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+</div>
+
+<mat-form-field class="field-form"  [color]="'primary'">
+    <!-- <input type="date"   matInput>     -->
+
+    <input  formControlName="joined" placeholder="Date" matInput  [errorStateMatcher]="matcher" [matDatepicker]="picker">
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>Date is <strong>required</strong></mat-error>
+    }
+    @if (emailFormControl.hasError('joined') && !emailFormControl.hasError('required')) {
+      <mat-error>Please enter a valid Date</mat-error>
+    }
+    <mat-datepicker #picker></mat-datepicker>
+    
+</mat-form-field>
+<mat-form-field  class="field-form">
+    <mat-label>{{"permissions" | translate}}</mat-label>
+    <mat-select formControlName="permissions"  [errorStateMatcher]="matcher" >
+      <mat-option value="Admin">Admin</mat-option>
+      <mat-option value="Contributor">Contributor</mat-option>
+      <mat-option value="Viewer">Viewer</mat-option>
+    </mat-select>
+    
+    @if (emailFormControl.hasError('required')) {
+      <mat-error>Permissions are <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+
+  <button *ngIf="this.switchBtns === 'ADD'" (click)="saveForm()" class="btn btn-secondary" >{{"add-new-user" | translate}}</button>
+  <button *ngIf="this.switchBtns === 'EDIT'" (click)="editForm(switchBtnsId)" class="btn btn-info" >{{"edit-btn" | translate}}</button>
+
+
+</form>
+
+
+
+  
+
+

@@ -1,0 +1,31 @@
+.pagination-nav{
+    padding: 3rem 1rem 3rem ;
+
+}
+
+
+
+
+.page-link{
+    border-radius: 50%;
+    border: none;
+    background: none;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.before-page{
+    transform: rotate(180deg);
+}
+
+
+
+
+
+nav button{
+    border: 3px solid rgba(112, 112, 112, 0.53);
+}

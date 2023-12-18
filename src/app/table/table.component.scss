@@ -1,0 +1,65 @@
+
+
+tr{
+  display: grid;
+  grid-template-columns: 0.25fr repeat(5,1fr) 0.5fr;
+}
+
+
+td{
+    vertical-align: middle;
+}
+
+.profile-picture{
+  border-radius: 34.292px;
+width: 30px;
+height: 30px;
+}
+
+.permissions span{
+    padding: 0.25rem;
+    border-radius: 3px;
+
+
+}
+.Admin{ 
+    background: #DE6767;
+
+}
+.Contributor{
+    background: rgba(2, 94, 134, 0.32);
+}
+.Viewer{
+    background: #1F2124;
+}   
+
+
+.parent {
+    position: relative;
+  }
+
+  .element1, .element2 {
+    position: absolute;
+  }
+
+
+
+  .element2 {
+    top: 20px; /* Adjust top position to place it on top of element1 */
+    left: 20px; /* Adjust left position to place it on top of element1 */
+    z-index: 1; /* Set a higher z-index to place it on top */
+  }
+
+
+  .btn-arrange{
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+  }
+
+  .td-calender{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+  }

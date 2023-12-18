@@ -1,0 +1,35 @@
+{
+    "user-management": "إدارة المستخدم",
+    "search-bar" : "...بحث",
+    "permissions": "الأذونات",
+    "all":"الجميع",
+    "Admin":"مسؤل",
+    "Viewer":"مشاهد",
+    "Contributor":"مساهم",
+    "joined":"انضم",
+    "anytime":"في أي وقت",
+    "fya":"منذ 5 سنوات",
+    "tya":"منذ 10 سنوات",
+    "ffya":"منذ 15 سنوات",
+    "export": "تصدير",
+    "add-new-user":"+ مستخدم جديد",
+    "log-in": "تسجيل الدخول",
+    "email": "بريد إلكتروني",
+    "validated-email": "يرجى إدخال عنوان بريد إلكتروني صالح",
+    "required-email":"البريد الالكتروني",
+    "bold-required": "مطلوب",
+    "bold-valid":"صالح",
+    "location": "موقع",
+    "full-name": "الاسم الكامل",
+    "edit-btn": "تعديل",
+    "delete-btn": "الحذف",
+    "ten-rows":"10 صفوف",
+    "fifteen-rows":"15 صفوف",
+    "twenty-rows":"20 صفوف",
+    "twenty-five-rows": "25 صفوف",
+    "show":"عرض"
+
+
+
+
+}

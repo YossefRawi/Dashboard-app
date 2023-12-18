@@ -1,0 +1,34 @@
+{
+    "user-management" : "User Management",
+    "search-bar" : "Search...",
+    "permissions": "Permissions",
+    "all":"All",
+    "Admin":"Admin",
+    "Viewer":"Viewer",
+    "Contributor":"Contributor",
+    "joined":"Joined",
+    "anytime":"Anytime",
+    "fya":"5 years ago",
+    "tya":"10 years ago",
+    "ffya":"15 years ago",
+    "export": "Export",
+    "add-new-user":"New User +",
+    "log-in" : "Log In",
+    "email": "E-mail",
+    "validated-email": "Please enter a email address",
+    "required-email":"Email is",
+    "bold-required":"required",
+    "bold-valid": "valid",
+    "location": "Location",
+    "full-name": "Full Name",
+    "edit-btn": "EDIT",
+    "delete-btn": "DELETE",
+    "ten-rows":"10 rows",
+    "fifteen-rows":"15 rows",
+    "twenty-rows":"20 rows",
+    "twenty-five-rows": "25 rows",
+    "show":"Show"
+
+
+    
+}
