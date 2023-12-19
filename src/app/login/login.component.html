@@ -1,6 +1,7 @@
 <div class="form-container  vw-100 vh-100 d-flex">
-<form class=" border rounded-top-3 border-primary p-3 m-auto d-flex flex-column justify-content-center align-items-center width-fit-content gap-2" action="" [formGroup]="userForm" >
-  <h4 class=" rounded-top-3 form-header bg-primary text-secondary p-1 w-100 text-center">{{"log-in" | translate}}</h4>
+  <p class="text-muted position-fixed p-1">Only an admin can log in use 'yossef&#64;example.com'</p>
+<form class=" border rounded-3 border-primary p-3 m-auto d-flex flex-column justify-content-center align-items-center width-fit-content gap-2" action="" [formGroup]="userForm" >
+  <h4 class=" rounded-3 form-header bg-primary text-secondary p-1 w-100 text-center">{{"log-in" | translate}}</h4>
     <mat-form-field class="field-form-email"  [color]="'primary'">
         <mat-label>{{"email" | translate}}</mat-label>
         <input matInput formControlName="email" placeholder="Ex. pat@example.com" type="email"  [errorStateMatcher]="matcher" >

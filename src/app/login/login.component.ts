@@ -54,16 +54,11 @@ export class LoginComponent {
          if (isAdmin) {
 
            alert(`Success: ${this.userForm.value.email} has Admin permissions.`);
-          //  this.isLogged = true;
-          this.globalStateService.setIsLogged(true)
+            this.globalStateService.setIsLogged(true)
            this.router.navigate(['/home'])
 
          } else {
-
-          // this.isLogged = false;
-          this.globalStateService.setIsLogged(false)
            alert(`You aren't authorized. Only and ADMIN is authorized.`);
-
          }
         }
       
@@ -73,10 +68,5 @@ export class LoginComponent {
     
     }
  
-    // isAuthenticated(){
-    //   console.log(this.isLogged)
-    //   return this.isLogged;
-    // }
-    
 
 }

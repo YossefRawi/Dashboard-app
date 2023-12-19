@@ -1,5 +1,8 @@
 <header>
-  <h4 class="text-white">{{"user-management" | translate }}</h4>
+  <div class="header-container d-flex gap-4">
+    <h4 class="text-white">{{"user-management" | translate }}</h4>
+    <button class="btn btn-secondary " (click)="logout()" >{{"log-out" | translate}}</button>
+  </div>
   <nav class="navbar navbar-expand-lg ">
   <div class="navbar-first-section gap-3 d-flex align-items-center">
     <form class="form-inline my-2 my-lg-0">

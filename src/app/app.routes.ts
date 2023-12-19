@@ -9,7 +9,6 @@ import { canActivate } from './auth-guard';
 //ROUTES
 export const routes: Routes = [
     { path: 'login', component: LoginComponent, title:"Login Page"},
-    { path: '', redirectTo : 'login', pathMatch:'full'},
     { path: 'home', component: HomeComponent, title:"Home Page",canActivate: [canActivate]},
     { path: '**', pathMatch: 'full' ,component: PagenotfoundComponent, title:"404 NOT FOUND" },
 ];

@@ -56,28 +56,6 @@
       "checked": false
     },
     {
-      "id": 8,
-      "fullName": "Emma Davis",
-      "email": "emma@example.com",
-      "city": "Dallas",
-      "state": "TX",
-      "joined": "March 7, 2016",
-      "permissions": "Viewer",
-      "photo": "assets/images/Ellipse 10.svg",
-      "checked": false
-    },
-    {
-      "id": 9,
-      "fullName": "Daniel Lee",
-      "email": "daniel@example.com",
-      "city": "Phoenix",
-      "state": "AZ",
-      "joined": "July 14, 2015",
-      "permissions": "Admin",
-      "photo": "assets/images/Ellipse 3.svg",
-      "checked": false
-    },
-    {
       "id": 10,
       "fullName": "Olivia Hernandez",
       "email": "olivia@example.com",
@@ -108,17 +86,6 @@
       "joined": "February 9, 2012",
       "permissions": "Contributor",
       "photo": "assets/images/Ellipse 5.svg",
-      "checked": false
-    },
-    {
-      "id": 13,
-      "fullName": "Noah Taylor",
-      "email": "noah@example.com",
-      "city": "Charlotte",
-      "state": "NC",
-      "joined": "June 23, 2011",
-      "permissions": "Admin",
-      "photo": "assets/images/Ellipse 4.svg",
       "checked": false
     },
     {
@@ -188,7 +155,7 @@
       "checked": false
     },
     {
-      "id":23 ,
+      "id": 23,
       "fullName": "Emma Davis",
       "email": "emma@example.com",
       "city": "Dallas",
@@ -274,6 +241,17 @@
       "checked": false,
       "photo": "assets/images/Ellipse 2.svg",
       "id": 30
+    },
+    {
+      "fullName": "Youssef M",
+      "email": "yossef@example.com",
+      "city": "Ca",
+      "state": "Gz",
+      "joined": "February 2, 2022",
+      "permissions": "Admin",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg",
+      "id": 31
     }
   ]
 }

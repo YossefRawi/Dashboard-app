@@ -7,6 +7,7 @@ import { PopUpComponent } from '../pop-up/pop-up.component';
 import { PopupDataService } from '../pop-up/pop-up.service';
 import { TranslateLoader, TranslateModule, TranslateService, TranslateStore } from '@ngx-translate/core';
 import { AppComponent } from '../app.component';
+import { GlobalStateService } from '../login/isLogged';
 
 
 
@@ -54,9 +55,13 @@ export class DashHeaderComponent {
   }
 
 
-  constructor(private dialogRef: MatDialog, private popupDataService: PopupDataService){
+  constructor(private dialogRef: MatDialog, private popupDataService: PopupDataService,private globalStateService: GlobalStateService){
   }
 
+
+  logout(): void {
+    this.globalStateService.setLoggedOut();
+  }
 
 
   openDialog(text :string, id:number){

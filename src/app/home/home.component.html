@@ -1,6 +1,6 @@
 
 <div class="user-management-Z7n d-flex flex-column min-vh-100 max-vw-100 p-5">
-    <button class="btn btn-primary m-auto position-fixed start-50" (click)="switchLang()">Ar/En</button>
+    <button class="btn btn-primary m-auto position-fixed start-50" (click)="switchLang()">Ar/En</button>    
     <app-dash-header (sendDataToParent)="handleDataFromChild($event)"   ></app-dash-header>
     <app-table [rowDataForTable]="rowDataForTable" [dataForTable]="dataForTable" ></app-table>
     <app-paginator (sendRowDataToParent)="handleRowData($event)"></app-paginator>
