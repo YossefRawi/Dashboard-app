@@ -13,7 +13,7 @@ export const canActivate = () => {
       return true;
     } else {
       alert('Not authorized you MUST Log in!')  
-      router.navigate(['/login'])
+      router.navigate([''])
       return false;
     }
      

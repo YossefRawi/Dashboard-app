@@ -25,6 +25,6 @@ export class GlobalStateService {
   setLoggedOut(): void {
     this.isLogged = false;
     localStorage.removeItem(this.storageKey);
-    this.router.navigate(['/login'])
+    this.router.navigate([''])
   }
 }
