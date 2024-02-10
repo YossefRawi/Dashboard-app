@@ -21,6 +21,7 @@ import {
 import { FormService} from './form.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { SearchService } from '../shared/search.service';
+import { ViewerInfo } from '../shared/viewer.model';
 
 @Component({
   selector: 'app-form',
@@ -105,7 +106,7 @@ export class PopUpComponent implements OnInit {
         'MMMM d, yyyy'
       );
 
-      this.http.post(url, this.signupForm.value, { headers }).subscribe(
+      this.http.post<ViewerInfo>(url, this.signupForm.value, { headers }).subscribe(
         (data: any) => {
           console.log(data);
           alert('Form submitted successfully!');

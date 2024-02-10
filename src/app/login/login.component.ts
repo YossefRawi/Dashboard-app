@@ -3,6 +3,7 @@ import { Component, Injectable, OnInit, inject } from '@angular/core';
 import {
   FormBuilder,
   FormControl,
+  FormGroup,
   FormGroupDirective,
   NgForm,
   ReactiveFormsModule,
@@ -32,19 +33,6 @@ import {
   TranslateStore,
 } from '@ngx-translate/core';
 
-export class MyErrorStateMatcher implements ErrorStateMatcher {
-  isErrorState(
-    control: FormControl | null,
-    form: FormGroupDirective | NgForm | null
-  ): boolean {
-    const isSubmitted = form && form.submitted;
-    return !!(
-      control &&
-      control.invalid &&
-      (control.dirty || control.touched || isSubmitted)
-    );
-  }
-}
 
 @Component({
   selector: 'app-login',
@@ -56,8 +44,6 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
     MatSelectModule,
     MatInputModule,
     MatButtonModule,
-    MatDatepickerModule,
-    MatNativeDateModule,
     HttpClientModule,
     TranslateModule,
   ],
@@ -66,26 +52,29 @@ export class MyErrorStateMatcher implements ErrorStateMatcher {
   styleUrl: './login.component.scss',
 })
 @Injectable({ providedIn: 'root' })
-export class LoginComponent {
-  emailFormControl = new FormControl('', [
-    Validators.required,
-    Validators.email,
-  ]);
-  matcher = new ErrorStateMatcher();
-  // isLogged : Boolean = false ;
+export class LoginComponent implements OnInit {
+
+  adminForm!: FormGroup;
+
 
   constructor(
-    private formBuilder: FormBuilder,
     private http: HttpClient,
-    private globalStateService: GlobalStateService
+    private globalStateService: GlobalStateService,
+    private router : Router
   ) {}
-  userForm = this.formBuilder.group({
-    email: ['', Validators.required],
-  });
-  router: Router = inject(Router);
+  
+  ngOnInit(): void {
+    
+    this.adminForm = new FormGroup({
+      "email": new FormControl(null, [Validators.required, Validators.email])
+  
+    })
+  }
+
+
   logFormData() {
     const url = 'http://localhost:3000/Users';
-    if (!this.userForm.valid)
+    if (!this.adminForm.valid)
       return alert('Form is Invalid! please enter a valid Email.');
     this.http
       .get(url)
@@ -94,11 +83,11 @@ export class LoginComponent {
         console.log(data);
         const isAdmin = data.some(
           (obj: ViewerInfo) =>
-            obj.email === this.userForm.value.email &&
+            obj.email === this.adminForm.value.email &&
             obj.permissions === 'Admin'
         );
         if (isAdmin) {
-          alert(`Success: ${this.userForm.value.email} has Admin permissions.`);
+          alert(`Success: ${this.adminForm.value.email} has Admin permissions.`);
           this.globalStateService.setIsLogged(true);
           this.router.navigate(['/home']);
         } else {
