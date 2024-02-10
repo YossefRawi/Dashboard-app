@@ -53,7 +53,8 @@ export class PopUpComponent implements OnInit {
     private http: HttpClient,
     private datePipe: DatePipe,
     private formService: FormService,
-    private searchService: SearchService
+    private searchService: SearchService,
+
   ) {}
 
   ngOnInit(): void {
@@ -110,6 +111,7 @@ export class PopUpComponent implements OnInit {
         (data: any) => {
           console.log(data);
           alert('Form submitted successfully!');
+          location.reload();
         },
         (error) => {
           this.error = error.message;
@@ -138,12 +140,13 @@ export class PopUpComponent implements OnInit {
         .toPromise()
         .then((data: any) => {
           console.log(data);
+          alert('Form submitted successfully!');
+          location.reload();
         })
         .catch((err) => {
           new Error(err);
           this.error = err.message;
         });
-      alert('Form submitted successfully!');
     } else {
       alert('Form is invalid. Please check the inputs.');
     }

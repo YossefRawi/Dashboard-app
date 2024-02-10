@@ -1,11 +1,11 @@
 {
   "Users": [
     {
-      "fullName": "Smith Alice",
-      "email": "smith@example.com",
+      "fullName": "Smith Rawi",
+      "email": "smithRawi@example.com",
       "city": "Los Angeles",
-      "state": "CA",
-      "joined": "September 12, 2019",
+      "state": "Cairo",
+      "joined": "January 1, 0111",
       "permissions": "Viewer",
       "checked": false,
       "photo": "assets/images/Ellipse 2.svg",
@@ -252,6 +252,28 @@
       "checked": false,
       "photo": "assets/images/Ellipse 2.svg",
       "id": "31"
+    },
+    {
+      "id": "daae",
+      "fullName": "Youssef Mamdouh Ahmed Rawi",
+      "email": "yossefrwy@gmail.com",
+      "city": "Cairo",
+      "state": "Las Vegas",
+      "joined": "January 1, 2001",
+      "permissions": "Admin",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg"
+    },
+    {
+      "id": "d84c",
+      "fullName": "aa",
+      "email": "aa@aa",
+      "city": "a",
+      "state": "aa",
+      "joined": "January 1, 2001",
+      "permissions": "Admin",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg"
     }
   ]
 }
