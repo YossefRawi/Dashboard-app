@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
-export class PopupDataService {
+export class FormService {
   private clickedButtonSubject = new BehaviorSubject<{ button: string; id: number }| null>(null);
   clickedButton$ = this.clickedButtonSubject.asObservable();
 

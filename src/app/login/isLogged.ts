@@ -5,12 +5,16 @@ import { Router } from '@angular/router';
   providedIn: 'root',
 })
 export class GlobalStateService {
-  router : Router = inject(Router)
+  // router : Router = inject(Router)
   private readonly storageKey = 'isLogged';
-  private isLogged!: boolean;
+  private  isLogged!: boolean;
 
-  constructor() {
-    this.isLogged = localStorage.getItem(this.storageKey) === 'true';
+  constructor(private router : Router) {
+    if (typeof localStorage !== 'undefined') {
+      this.isLogged = localStorage.getItem(this.storageKey) === 'true';
+    } else {
+      return
+    }
   }
 
   getIsLogged(): boolean {

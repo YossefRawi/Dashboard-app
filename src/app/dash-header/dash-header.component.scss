@@ -24,7 +24,7 @@
     color: white;
 }
 
-header nav{
+nav{
     display: grid;
     grid-template-areas: 
     "a a a"
@@ -41,6 +41,22 @@ nav h4{
  }
  .navbar-second-section{
     grid-area: c;
+  
+
  }
 
 
+@media (max-width: 1080px) {
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+ 
+    .navbar-second-section{
+        display: flex;
+        justify-content: start;
+    }
+
+}

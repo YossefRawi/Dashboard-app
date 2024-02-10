@@ -6,7 +6,7 @@ import { provideAnimations } from '@angular/platform-browser/animations';
 import { HttpClient, HttpClientModule, provideHttpClient } from '@angular/common/http';
 import { LoginComponent } from './login/login.component';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-import { TranslateLoader, TranslateModule, TranslateService } from '@ngx-translate/core';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 
 
 export function HttpLoaderFactory(http: HttpClient){
@@ -20,7 +20,7 @@ export const appConfig: ApplicationConfig = {
      provideAnimations(), 
      provideHttpClient(), 
      LoginComponent,
-     importProvidersFrom(HttpClientModule), // or provideHttpClient() in Angular v15
+     importProvidersFrom(HttpClientModule),
      importProvidersFrom(TranslateModule.forRoot({
       defaultLanguage: "en",
          loader: {
