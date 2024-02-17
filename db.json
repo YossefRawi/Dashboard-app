@@ -1,28 +1,6 @@
 {
   "Users": [
     {
-      "fullName": "Smith Rawi",
-      "email": "smithRawi@example.com",
-      "city": "Los Angeles",
-      "state": "Cairo",
-      "joined": "January 1, 0111",
-      "permissions": "Viewer",
-      "checked": false,
-      "photo": "assets/images/Ellipse 2.svg",
-      "id": "2"
-    },
-    {
-      "id": "4",
-      "fullName": "William Eva",
-      "email": "eav@gmail.com",
-      "city": "cairo",
-      "state": "cairo",
-      "joined": "November 5, 2011",
-      "permissions": "Contributor",
-      "photo": "assets/images/Ellipse 6.svg",
-      "checked": false
-    },
-    {
       "id": "5",
       "fullName": "David Brown",
       "email": "david@example.com",
@@ -98,17 +76,6 @@
       "permissions": "Contributor",
       "photo": "assets/images/Ellipse 3.svg",
       "checked": false
-    },
-    {
-      "fullName": "Youssef Mamdouh Ahmed Rawi",
-      "email": "yossefrwy@gmail.com",
-      "city": "Cairo",
-      "state": "State",
-      "joined": "November 11, 2011",
-      "permissions": "Contributor",
-      "checked": false,
-      "photo": "assets/images/Ellipse 2.svg",
-      "id": "15"
     },
     {
       "id": "19",
@@ -271,6 +238,17 @@
       "city": "a",
       "state": "aa",
       "joined": "January 1, 2001",
+      "permissions": "Admin",
+      "checked": false,
+      "photo": "assets/images/Ellipse 2.svg"
+    },
+    {
+      "id": "9168",
+      "fullName": "Ahmed Rawi",
+      "email": "Rawi@ahmed.com",
+      "city": "Ca",
+      "state": "Ca",
+      "joined": "January 1, 1999",
       "permissions": "Admin",
       "checked": false,
       "photo": "assets/images/Ellipse 2.svg"

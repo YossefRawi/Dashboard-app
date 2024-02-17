@@ -1,22 +1,22 @@
 import { Router, Routes } from '@angular/router';
-import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { canActivate } from './shared/auth-guard';
+import { canActivate } from './shared/services/auth-guard';
 
 //ROUTES
 export const routes: Routes = [
-  { path: '', component: LoginComponent, title: 'Login Page' },
+  { 
+    path: '', 
+    loadChildren: () => import('./shared/components/login/login.module').then(m => m.LoginModule), 
+    title: 'Login Page' },
   {
     path: 'home',
-    component: HomeComponent,
+    loadChildren: () => import('./shared/components/home/home.module').then(m => m.HomeModule),
     title: 'Home Page',
     canActivate: [canActivate],
   },
   {
     path: '**',
     pathMatch: 'full',
-    component: PagenotfoundComponent,
+    loadChildren: () => import('./shared/components/pagenotfound/pagenotfound.module').then(m => m.PagenotfoundModule),
     title: '404 NOT FOUND',
   },
 ];

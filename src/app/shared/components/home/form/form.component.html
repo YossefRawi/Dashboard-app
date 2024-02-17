@@ -1,0 +1,95 @@
+<form action="" [formGroup]="signupForm">
+  <div class="alert alert-danger border-radius-0" *ngIf="error">
+    <h1>An Error Occured!</h1>
+    <p>{{ error }}</p>
+  </div>
+  <mat-form-field class="field-form" [color]="'primary'">
+    <mat-label>{{ "full-name" | translate }}</mat-label>
+    <input formControlName="fullName" placeholder="Full Name" matInput />
+    @if (!signupForm.get('fullName')!.valid &&
+    signupForm.get('fullName')!.touched) {
+    <mat-error>Full Name is <strong>required</strong></mat-error>
+    }
+  </mat-form-field>
+
+  <mat-form-field class="field-form" [color]="'primary'">
+    <mat-label>{{ "email" | translate }}</mat-label>
+    <input
+      matInput
+      formControlName="email"
+      placeholder="Ex. pat@example.com"
+      type="email"
+    />
+    <!-- <mat-hint>Errors appear instantly!</mat-hint> -->
+    @if (!signupForm.get('email')!.valid && signupForm.get('email')!.touched) {
+    <mat-error>Please enter a <strong>valid</strong> email address</mat-error>
+    }
+  </mat-form-field>
+
+  <div class="state-city d-flex">
+    <mat-form-field class="field-form" [color]="'primary'">
+      <mat-label>{{ "city" | translate }}</mat-label>
+      <input formControlName="city" placeholder="City" matInput />
+      @if (!signupForm.get('city')!.valid && signupForm.get('city')!.touched) {
+      <mat-error>Please enter a <strong>valid</strong> City</mat-error>
+      }
+    </mat-form-field>
+
+    <mat-form-field class="field-form" [color]="'primary'">
+      <mat-label>{{ "state" | translate }}</mat-label>
+      <input formControlName="state" placeholder="State" matInput />
+      @if (!signupForm.get('state')!.valid && signupForm.get('state')!.touched)
+      {
+      <mat-error>Please enter a <strong>valid</strong> State</mat-error>
+      }
+    </mat-form-field>
+  </div>
+
+  <mat-form-field class="field-form" [color]="'primary'">
+    <input
+      formControlName="joined"
+      placeholder="Date"
+      matInput
+      [matDatepicker]="picker"
+    />
+    <mat-datepicker-toggle 
+      matIconSuffix 
+      [for]="picker"
+    ></mat-datepicker-toggle>
+    @if (!signupForm.get('joined')!.valid && signupForm.get('joined')!.touched)
+    {
+    <mat-error>Please enter a <strong>valid</strong> Date</mat-error>
+    }
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field class="field-form">
+    <mat-label>{{ "permissions" | translate }}</mat-label>
+    <mat-select formControlName="permissions">
+      <mat-option value="Admin">Admin</mat-option>
+      <mat-option value="Contributor">Contributor</mat-option>
+      <mat-option value="Viewer">Viewer</mat-option>
+    </mat-select>
+
+    @if (!signupForm.get('permissions')!.valid &&
+    signupForm.get('permissions')!.touched) {
+    <mat-error>Please enter <strong>valid</strong> permissions</mat-error>
+    }
+  </mat-form-field>
+
+  <button
+    type="button"
+    *ngIf="this.switchBtns === 'ADD'"
+    (click)="saveForm()"
+    class="btn btn-secondary"
+  >
+    {{ "add-new-user" | translate }}
+  </button>
+  <button
+    type="button"
+    *ngIf="this.switchBtns === 'EDIT'"
+    (click)="editForm(switchBtnsId)"
+    class="btn btn-info"
+  >
+    {{ "edit-btn" | translate }}
+  </button>
+</form>

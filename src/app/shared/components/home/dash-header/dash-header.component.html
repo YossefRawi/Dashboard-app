@@ -1,0 +1,109 @@
+<header>
+  <div class="header-container d-flex gap-4 align-items-baseline">
+    <h1 class="text-white align-bottom">{{ "user-management" | translate }}</h1>
+    <button class="btn btn-secondary" (click)="logout()">
+      {{ "log-out" | translate }}
+    </button>
+    <button class="btn btn-primary" (click)="switchLang()">Ar/En</button>
+  </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="navbar-first-section gap-3 d-flex align-items-center">
+      <form class="form-inline my-2 my-lg-0">
+        <input
+          name="searchBar"
+          class="form-control mr-sm-2 rounded-0 text-secondary"
+          [(ngModel)]="searchQueryName"
+          (input)="sendValue(searchQueryName)"
+          type="search"
+          [placeholder]="'search-bar' | translate"
+          #filter
+          aria-label="Search"
+        />
+      </form>
+
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-primary rounded-0 dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          {{ "permissions" | translate }}:
+          <span class="text-secondary">{{ "all" | translate }}</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button class="dropdown-item" (click)="sendValue('Admin')">
+              <span class="text-secondary">{{ "Admin" | translate }}</span>
+            </button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item"
+              (click)="sendValue('Contributor')"
+            >
+              <span class="text-secondary">{{
+                "Contributor" | translate
+              }}</span>
+            </button>
+          </li>
+          <li>
+            <button class="dropdown-item" (click)="sendValue('Viewer')">
+              <span class="text-secondary">{{ "Viewer" | translate }}</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button
+          type="button"
+          class="btn btn-primary rounded-0 dropdown-toggle"
+          data-bs-toggle="dropdown"
+        >
+          {{ "joined" | translate }} :
+          <span class="text-secondary"> {{ "anytime" | translate }}</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button (click)="sendValue('2015')" class="dropdown-item">
+              <span class="text-secondary"> {{ "fya" | translate }}</span>
+            </button>
+          </li>
+          <li>
+            <button (click)="sendValue('2010')" class="dropdown-item">
+              <span class="text-secondary"> {{ "tya" | translate }}</span>
+            </button>
+          </li>
+          <li>
+            <button (click)="sendValue('2020')" class="dropdown-item">
+              <span class="text-secondary"> {{ "ffya" | translate }}</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <button
+        type="button"
+        class="btn d-flex justify-content-center align-items-center width-37 btn-primary four-dots"
+      >
+        <img src="assets/four-dots.svg" alt="????" />
+      </button>
+    </div>
+
+    <div
+      class="navbar-collapse  gap-3 navbar-second-section "
+      id="navbarSupportedContent">
+      <button type="button" class="three--dots btn">
+        <img src="assets/three-dots.svg" alt="???" />
+      </button>
+      <button type="button" class="btn btn-primary rounded-0">
+        {{ "export" | translate }}
+      </button>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        matInput
+        (click)="openDialog('ADD', -1)">
+        {{ "add-new-user" | translate }}
+      </button>
+    </div>
+  </nav>
+</header>

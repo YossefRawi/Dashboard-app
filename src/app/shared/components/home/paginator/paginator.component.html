@@ -1,0 +1,58 @@
+<nav
+  class="pagination-nav bg-primary d-flex justify-content-between pt-5 pb-5"
+  aria-label="Page navigation-light example"
+>
+  <ul
+    class="pagination d-flex justify-content-center align-items-center gap-3 w-35"
+  >
+    <li class="">
+      <a class="page-item-borderless before-page">
+        <img class="before-page" src="assets/arrows-after.svg" alt="" />
+      </a>
+    </li>
+    <li class="page-item">
+      <a class="page-link bg-secondary text-white">1</a>
+    </li>
+    <li class="page-item"><a class="page-link text-white">2</a></li>
+    <li class="page-item"><a class="page-link text-white">3</a></li>
+    <li class="page-item"><a class="page-link text-white">4</a></li>
+    <li class="page-item">
+      <a class=""><img src="assets/page-dots.svg" alt="" /></a>
+    </li>
+    <li class="page-item"><a class="page-link text-white">10</a></li>
+    <li class="page-item-borderless">
+      <a class="">
+        <img class="element1" src="assets/arrows-after.svg" alt="" />
+      </a>
+    </li>
+  </ul>
+
+  <div class="dropup d-flex align-items-baseline">
+    <p class="text-white">{{ "show" | translate }}:</p>
+    <button
+      type="button"
+      class="btn btn-primary rounded-0 text-white"
+      data-bs-toggle="dropdown"
+    >
+      {{ "ten-rows" | translate }} <img src="assets/arrange.svg" alt="" />
+    </button>
+    <ul class="dropdown-menu">
+      <li>
+        <a class="dropdown-item" (click)="setRowNum(15)"
+          >{{ "fifteen-rows" | translate }}<img src="assets/arrange.svg" alt=""
+        /></a>
+      </li>
+      <li>
+        <a class="dropdown-item" (click)="setRowNum(20)"
+          >{{ "twenty-rows" | translate }}<img src="assets/arrange.svg" alt=""
+        /></a>
+      </li>
+      <li>
+        <a class="dropdown-item" (click)="setRowNum(35)"
+          >{{ "thirty-five-rows" | translate
+          }}<img src="assets/arrange.svg" alt=""
+        /></a>
+      </li>
+    </ul>
+  </div>
+</nav>
