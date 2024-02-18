@@ -1,7 +1,7 @@
 <header>
   <div class="header-container d-flex gap-4 align-items-baseline">
     <h1 class="text-white align-bottom">{{ "user-management" | translate }}</h1>
-    <button class="btn btn-secondary" (click)="logout()">
+    <button class="btn btn-secondary text-white" (click)="logout()">
       {{ "log-out" | translate }}
     </button>
     <button class="btn btn-primary" (click)="switchLang()">Ar/En</button>
@@ -99,8 +99,9 @@
       </button>
       <button
         type="button"
-        class="btn btn-secondary"
+        class="btn btn-secondary text-white"
         matInput
+        
         (click)="openDialog('ADD', -1)">
         {{ "add-new-user" | translate }}
       </button>
