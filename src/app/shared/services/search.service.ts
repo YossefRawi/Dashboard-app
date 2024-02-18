@@ -1,10 +1,4 @@
-import {
-  Injectable,
-  Input,
-  OnChanges,
-  SimpleChanges,
-  inject,
-} from '@angular/core';
+import { Injectable, inject } from '@angular/core';
 import { ViewerInfo } from '../models/viewer.model';
 import { ViewerService } from './viewer.service';
 import { Subject } from 'rxjs';
@@ -14,7 +8,6 @@ import { Subject } from 'rxjs';
 })
 export class SearchService {
   private inputValueSubject: Subject<string> = new Subject<string>();
-
   inputValue$ = this.inputValueSubject.asObservable();
 
   sendInputValue(value: string): void {
@@ -77,11 +70,11 @@ export class SearchService {
         return response.json();
       })
       .then((data) => {
-        console.log('Deleted:', data);
+        alert('Succesfully Deleted!')
         location.reload();
       })
       .catch((error) => {
-        console.error('Error:', error);
+        alert(error);
       });
   }
 }

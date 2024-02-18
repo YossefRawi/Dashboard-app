@@ -100,17 +100,6 @@
       "checked": false
     },
     {
-      "id": "21",
-      "fullName": "Sophia Miller",
-      "email": "sophia@example.com",
-      "city": "Denver",
-      "state": "CO",
-      "joined": "January 5",
-      "permissions": "Contributor",
-      "photo": "assets/images/Ellipse 8.svg",
-      "checked": false
-    },
-    {
       "id": "22",
       "fullName": "Jack Wilson",
       "email": "jack@example.com",
@@ -199,17 +188,6 @@
       "checked": false
     },
     {
-      "fullName": "Youssef Mamdouh Ahmed Rawi",
-      "email": "yossefrwy@gmail.com",
-      "city": "Cairo",
-      "state": "State",
-      "joined": "November 11, 2011",
-      "permissions": "Contributor",
-      "checked": false,
-      "photo": "assets/images/Ellipse 2.svg",
-      "id": "30"
-    },
-    {
       "fullName": "Youssef M",
       "email": "yossef@example.com",
       "city": "Ca",
@@ -219,28 +197,6 @@
       "checked": false,
       "photo": "assets/images/Ellipse 2.svg",
       "id": "31"
-    },
-    {
-      "id": "daae",
-      "fullName": "Youssef Mamdouh Ahmed Rawi",
-      "email": "yossefrwy@gmail.com",
-      "city": "Cairo",
-      "state": "Las Vegas",
-      "joined": "January 1, 2001",
-      "permissions": "Admin",
-      "checked": false,
-      "photo": "assets/images/Ellipse 2.svg"
-    },
-    {
-      "id": "d84c",
-      "fullName": "aa",
-      "email": "aa@aa",
-      "city": "a",
-      "state": "aa",
-      "joined": "January 1, 2001",
-      "permissions": "Admin",
-      "checked": false,
-      "photo": "assets/images/Ellipse 2.svg"
     },
     {
       "id": "9168",

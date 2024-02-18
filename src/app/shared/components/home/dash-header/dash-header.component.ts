@@ -18,16 +18,17 @@ export interface DialogData {
 })
 export class DashHeaderComponent {
   searchQueryName!: string;
-
+  
   // appComp: AppComponent = inject(AppComponent);
-
+  
   constructor(
     private dialogRef: MatDialog,
     private formService: FormService,
     private globalStateService: GlobalStateService,
     private translate: TranslateService,
     private searchService: SearchService
-  ) {}
+    ) {}
+    
 
   sendValue(value: string) {
     this.searchService.sendInputValue(value);
